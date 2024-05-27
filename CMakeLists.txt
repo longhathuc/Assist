@@ -17,3 +17,5 @@ set(GIT_FORCE_PULL FALSE)
 
 add_assist_plugin(extlibs/tinyxml)
 add_assist_plugin(lib/assist_core)
+
+add_assist_plugin(assist_main)
