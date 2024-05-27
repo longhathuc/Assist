@@ -1,0 +1,3 @@
+[submodule "assist_core"]
+	path = assist_core
+	url = git@forge.icube.unistra.fr:assist/lib/assist_core.git
