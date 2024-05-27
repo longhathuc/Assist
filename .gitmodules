@@ -1,4 +1,4 @@
-[submodule "assist_core"]
+[submodule "lib/assist_core"]
 	path = lib/assist_core
 	url = https://forge.icube.unistra.fr/assist/lib/assist_core.git
 [submodule "extlibs/tinyxml"]
