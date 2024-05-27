@@ -4,3 +4,6 @@
 [submodule "extlibs/tinyxml"]
 	path = extlibs/tinyxml
 	url = https://forge.icube.unistra.fr/assist/extlibs/tinyxml.git
+[submodule "assist_main"]
+	path = assist_main
+	url = https://forge.icube.unistra.fr/assist/assist_main.git
