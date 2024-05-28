@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(assist)
 
-include(assist.cmake)
-include(git.cmake)
+include(cmake/assist.cmake)
+
 
 #DISABLE UNECESSARY WARNINGS
 set(CMAKE_MESSAGE_LOG_LEVEL "NOTICE")
