@@ -7,3 +7,6 @@
 [submodule "assist_main"]
 	path = assist_main
 	url = https://forge.icube.unistra.fr/assist/assist_main.git
+[submodule "cmake"]
+	path = cmake
+	url = git@forge.icube.unistra.fr:assist/assist_cmake.git
