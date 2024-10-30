@@ -35,20 +35,51 @@ More information about the existing plugins can be found on the website: [https:
    Follow https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html to install ROS 2 on Ubuntu 24.04
 
 5. **CUDA Installation: **
-   
-` wget https://developer.download.nvidia.com/compute/cuda/12.6.2/local_installers/cuda_12.6.2_560.35.03_linux.run
-sudo sh cuda_12.6.2_560.35.03_linux.run`
+<pre><code>    
+wget https://developer.download.nvidia.com/compute/cuda/12.6.2/local_installers/cuda_12.6.2_560.35.03_linux.run
+sudo sh cuda_12.6.2_560.35.03_linux.run
+</code></pre>
 
 6. Follow https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent to create ssh key for github and gitlab
    After get the public key, paste the key in the SSH Keys list of
    https://github.com
    https://gitlab.inria.fr/
    https://forge.icube.unistra.fr/
-7. Clone these two
-   `git@forge.icube.unistra.fr:sofa/mimesis/mimesiscript.git`
-   `git@forge.icube.unistra.fr:sofa/mimesis/sofaconfig.git`
-
    
+8. Clone these two
+   <pre><code> 
+   git@forge.icube.unistra.fr:sofa/mimesis/mimesiscript.git
+   git@forge.icube.unistra.fr:sofa/mimesis/sofaconfig.git
+   </code></pre>
+9. Add these lines to .bashrc in home folder
+<pre><code> 
+PATH=$PATH:/home/yourname/work/Sources/forge.icube.unistra.fr/sofa/mimesis/mimesiscript:/home/yourname/work/Sources/forge.icube.unistra.fr/assist/assist_config
+export CUDA_HOME=/usr/local/cuda-cudaversion
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-cudaversion/lib64:/usr/local/cuda-cudaversion/extras/CUPTI/lib64
+export PATH=$PATH:$CUDA_HOME/bin
+
+
+SOFA_INSTALL_DIR=/home/yourname/work/build/sofaAssistBuild/lib/cmake
+SOFA_WORK_DIRECTORY=/home/yourname/work/Sources
+SOFA_CONFIG_DIRECTORY=/home/yourname/work/Sources/forge.icube.unistra.fr/sofa/mimesis/sofaconfig/yourconfigname
+
+export SOFA_WORK_DIRECTORY
+export SOFA_CONFIG_DIRECTORY
+export SOFA_INSTALL_DIR
+
+export PATH=$PATH:/home/yourname/work/build/sofaAssistBuild/bin:/home/yourname/work/build/sofaAssistBuild/install/bin
+export CMAKE_MODULE_PATH=$CMAKE_MODULE_PATH:/home/yourname/work/build/sofaAssistBuild/assist/cmake
+
+
+#ROS2
+source /opt/ros/jazzy/setup.bash
+source /home/yourname/work/build/sofaAssistBuild/assist/install/setup.bash
+
+
+export ROS_DOMAIN_ID=yourDomainIDByChoice
+
+export PYTHONPATH=$PYTHONPATH:/home/yourname/work/build/sofaAssistBuild/install/lib
+</code></pre>
    
    
    
