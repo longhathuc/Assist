@@ -33,8 +33,9 @@ More information about the existing plugins can be found on the website: [https:
    ```
 4. **ROS Installation: **
    Follow https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html to install ROS 2 on Ubuntu 24.04
-
-5. **CUDA Installation: **
+   Install colcon
+   <pre><code>sudo apt install python3-colcon-common-extensions</code></pre>
+6. **CUDA Installation: **
 <pre><code>    
 wget https://developer.download.nvidia.com/compute/cuda/12.6.2/local_installers/cuda_12.6.2_560.35.03_linux.run
 sudo sh cuda_12.6.2_560.35.03_linux.run
