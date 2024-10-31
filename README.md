@@ -1,5 +1,5 @@
 **Assist: A Flexible Tool for Fast Development in Robotics and Simulation**
-
+ 
 Assist is an advanced graphical programming software tailored to facilitate the fusion of heterogeneous data from finite element numerical simulations with essential inputs for robotic control, non-rigid registration of finite element models, and augmented reality. The software provides a platform for smooth data exchange between different processors and libraries, integrating popular libraries such as OpenCV, ROS2, SOFA, CUDA, and Python.
 
 ### Note on Build Structure
