@@ -71,10 +71,13 @@ export ROS_DOMAIN_ID=yourDomainIDByChoice
 export PYTHONPATH=$PYTHONPATH:/home/yourname/work/build/sofaAssistBuild/install/lib
 </code></pre>
 
+8. create your CMakeLists.txt in assist_config
+   sample file can be found in
+
+   <pre><code>forge.icube.unistra.fr/assist/assist_config/long_ros2</code></pre>
+10. Use Qt Creator to configure and build the project in to  /home/yourname/work/build/sofaAssistBuild
    
-8. Use Qt Creator to configure and build the project in to  /home/yourname/work/build/sofaAssistBuild
-   
-10. Run the following code to test 
+11. Run the following code to test 
 <pre><code>
     assist_gui /home/yourusername/work/Sources/forge.icube.unistra.fr/sofa/sperry/scenes/Demos/Full-Simu/SharedControl_FIX_IIWA/ICRA2025/Inverse_Human_Auto.flow
 
