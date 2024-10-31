@@ -83,5 +83,5 @@ export ROS_DOMAIN_ID=yourDomainIDByChoice
 export PYTHONPATH=$PYTHONPATH:/home/yourname/work/build/sofaAssistBuild/install/lib
 </code></pre>
    
-   
+10. Use Qt Creator to build the project in to  /home/yourname/work/build/sofaAssistBuild
    
