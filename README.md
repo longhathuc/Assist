@@ -19,6 +19,7 @@ More information about the existing plugins can be found on the website: [https:
    Install colcon to build ros related projects
    <pre><code>sudo apt install python3-colcon-common-extensions</code></pre>
 3. **CUDA Installation: **
+Only Cuda toolkits, uncheck the installation of Nvidia driver
 <pre><code>    
 wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 chmod +x cuda_11.8.0_520.61.05_linux.run
