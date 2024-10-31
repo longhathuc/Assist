@@ -12,12 +12,13 @@ More information about the existing plugins can be found on the website: [https:
 
 ### Step-by-Step Installation
 
-   ```
-4. **ROS Installation: **
+1. Having credentials with forge.icube.fr and inria.fr
+   
+2. **ROS Installation: **
    Follow https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html to install ROS 2 on Ubuntu 24.04
    Install colcon
    <pre><code>sudo apt install python3-colcon-common-extensions</code></pre>
-5. **CUDA Installation: **
+3. **CUDA Installation: **
 <pre><code>    
 wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 chmod +x cuda_11.8.0_520.61.05_linux.run
@@ -26,18 +27,21 @@ sudo ./cuda_11.8.0_520.61.05_linux.run
 For cuda 12
 wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.28.03_linux.run
 
-6. Follow https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent to create ssh key for github and gitlab
+4. Follow https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent to create ssh key for github and gitlab
    After get the public key, paste the key in the SSH Keys list of
    https://github.com
    https://gitlab.inria.fr/
    https://forge.icube.unistra.fr/
    
-8. Clone these two repositories
+5. Clone these two repositories 
    <pre><code> 
    git@forge.icube.unistra.fr:sofa/mimesis/mimesiscript.git
    git@forge.icube.unistra.fr:sofa/mimesis/sofaconfig.git
    </code></pre>
-9. Add these lines to .bashrc in home folder
+
+6. Run the follow in line in terminal to get the Sources code
+   <pre><code>sofascript ua</code></pre>
+7. Add these lines to .bashrc in home folder
 <pre><code> 
 PATH=$PATH:/home/yourname/work/Sources/forge.icube.unistra.fr/sofa/mimesis/mimesiscript:/home/yourname/work/Sources/forge.icube.unistra.fr/assist/assist_config
 export CUDA_HOME=/usr/local/cuda-cudaversion
@@ -66,6 +70,7 @@ export ROS_DOMAIN_ID=yourDomainIDByChoice
 
 export PYTHONPATH=$PYTHONPATH:/home/yourname/work/build/sofaAssistBuild/install/lib
 </code></pre>
+
    
-10. Use Qt Creator to build the project in to  /home/yourname/work/build/sofaAssistBuild
+8. Use Qt Creator to build the project in to  /home/yourname/work/build/sofaAssistBuild
    
