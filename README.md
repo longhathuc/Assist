@@ -27,7 +27,7 @@ sudo ./cuda_11.8.0_520.61.05_linux.run
 For cuda 12
 wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.28.03_linux.run
 
-If you choose cuda 11 privilege the g++ to compile. Set priority to 100 will make it default
+If you choose cuda 11 privilege the g++ 11 to compile. Set priority to 100 will make it default
 
 <pre><code>sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100</code></pre>
 
