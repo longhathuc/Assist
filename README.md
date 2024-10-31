@@ -37,8 +37,9 @@ More information about the existing plugins can be found on the website: [https:
    <pre><code>sudo apt install python3-colcon-common-extensions</code></pre>
 6. **CUDA Installation: **
 <pre><code>    
-wget https://developer.download.nvidia.com/compute/cuda/12.6.2/local_installers/cuda_12.6.2_560.35.03_linux.run
-sudo sh cuda_12.6.2_560.35.03_linux.run
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+chmod +x cuda_11.8.0_520.61.05_linux.run
+sudo ./cuda_11.8.0_520.61.05_linux.run
 </code></pre>
 
 6. Follow https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent to create ssh key for github and gitlab
