@@ -11,31 +11,13 @@ The main project repository on GitHub contains the list of submodules, whereas a
 More information about the existing plugins can be found on the website: [https://assist.cnrs.fr/](https://assist.cnrs.fr/)
 
 ### Step-by-Step Installation
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/courtecuisse/Assist.git
-   cd Assist
-   ```
-   
-2. **Initialize and Update Submodules:**:
-   ```bash   
-   git submodule init
-   git submodule update
-   ```
 
-3. **Build and Install Assist:**:
-   ```bash   
-   mkdir build
-   cd build
-   cmake ..
-   make
-   sudo make install
    ```
 4. **ROS Installation: **
    Follow https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html to install ROS 2 on Ubuntu 24.04
    Install colcon
    <pre><code>sudo apt install python3-colcon-common-extensions</code></pre>
-6. **CUDA Installation: **
+5. **CUDA Installation: **
 <pre><code>    
 wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 chmod +x cuda_11.8.0_520.61.05_linux.run
@@ -48,7 +30,7 @@ sudo ./cuda_11.8.0_520.61.05_linux.run
    https://gitlab.inria.fr/
    https://forge.icube.unistra.fr/
    
-8. Clone these two
+8. Clone these two repositories
    <pre><code> 
    git@forge.icube.unistra.fr:sofa/mimesis/mimesiscript.git
    git@forge.icube.unistra.fr:sofa/mimesis/sofaconfig.git
