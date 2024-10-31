@@ -12,11 +12,11 @@ More information about the existing plugins can be found on the website: [https:
 
 ### Step-by-Step Installation
 
-1. Having credentials with forge.icube.fr and inria.fr
+1. Having credentials with forge.icube.fr and gitlab.inria.fr
    
 2. **ROS Installation: **
    Follow https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html to install ROS 2 on Ubuntu 24.04
-   Install colcon
+   Install colcon to build ros related projects
    <pre><code>sudo apt install python3-colcon-common-extensions</code></pre>
 3. **CUDA Installation: **
 <pre><code>    
@@ -72,9 +72,13 @@ export PYTHONPATH=$PYTHONPATH:/home/yourname/work/build/sofaAssistBuild/install/
 </code></pre>
 
    
-8. Use Qt Creator to build the project in to  /home/yourname/work/build/sofaAssistBuild
-9. Run the following code
+8. Use Qt Creator to configure and build the project in to  /home/yourname/work/build/sofaAssistBuild
+   
+10. Run the following code to test 
 <pre><code>
-    assist_gui /home/yourusername/work/Sources/forge.icube.unistra.fr/sofa/sperry/scenes/Demos/Full-Simu/SharedControl_FIX_IIWA/ICRA2025/Inverse_Human_Auto.flow </code></pre>
+    assist_gui /home/yourusername/work/Sources/forge.icube.unistra.fr/sofa/sperry/scenes/Demos/Full-Simu/SharedControl_FIX_IIWA/ICRA2025/Inverse_Human_Auto.flow
+
+assist_fork /home/yourusername/work/Sources/forge.icube.unistra.fr/sofa/sperry/scenes/Demos/Full-Simu/SharedControl_FIX_IIWA/ICRA.fork
+</code></pre>
 
    
