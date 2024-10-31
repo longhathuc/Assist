@@ -73,4 +73,8 @@ export PYTHONPATH=$PYTHONPATH:/home/yourname/work/build/sofaAssistBuild/install/
 
    
 8. Use Qt Creator to build the project in to  /home/yourname/work/build/sofaAssistBuild
+9. Run the following code
+<pre><code>
+    assist_gui /home/yourusername/work/Sources/forge.icube.unistra.fr/sofa/sperry/scenes/Demos/Full-Simu/SharedControl_FIX_IIWA/ICRA2025/Inverse_Human_Auto.flow </code></pre>
+
    
