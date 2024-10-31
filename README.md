@@ -23,6 +23,8 @@ wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/
 chmod +x cuda_11.8.0_520.61.05_linux.run
 sudo ./cuda_11.8.0_520.61.05_linux.run
 </code></pre>
+For cuda 12
+wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.28.03_linux.run
 
 6. Follow https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent to create ssh key for github and gitlab
    After get the public key, paste the key in the SSH Keys list of
